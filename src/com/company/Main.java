@@ -23,6 +23,7 @@ public class Main {
             case "fuelTruck":
                 FuelTruck fuelTruck = new FuelTruck("it ships fuel\n", "the fuel truck owner is called John\n", "John goes about 20000000 kms for a year in this truck \n ");
                 fuelTruck.print();
+                break;
             case "dumpTruck":
                 DumpTruck dumpTruck = new DumpTruck(" value of let the transport is 1000 $ for a year\n", "the truck can ship about 10 tons\n", "the dump truck owner is called Michel");
                 dumpTruck.print();
