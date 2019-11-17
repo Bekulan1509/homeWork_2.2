@@ -5,6 +5,11 @@ public class DumpTruck extends Truck implements Printible{
     private String howManyTonnesItCanShipping;
     private String theDumpTruckOwner;
 
+    public DumpTruck() {
+
+    }
+
+
     public String getValueOfLetTransport() {
         return valueOfLetTransport;
     }
@@ -29,7 +34,7 @@ public class DumpTruck extends Truck implements Printible{
         this.theDumpTruckOwner = theDumpTruckOwner;
     }
 
-    public DumpTruck(String valueOfLetTransport, String howManyTonnesItCanShipping, String theDumpTruckOwner) {
+    public DumpTruck(String valueOfLetTransport, String howManyTonnesItCanShipping) {
         this.valueOfLetTransport = valueOfLetTransport;
         this.howManyTonnesItCanShipping = howManyTonnesItCanShipping;
         this.theDumpTruckOwner = theDumpTruckOwner;

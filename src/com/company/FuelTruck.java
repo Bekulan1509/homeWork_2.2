@@ -5,6 +5,10 @@ public class FuelTruck extends Truck implements Printible {
     private String fuelTruckOwner;
     private String howOftenItGoesForAYear;
 
+    public FuelTruck() {
+
+    }
+
     public String getWhatItShipping() {
         return whatItShipping;
     }

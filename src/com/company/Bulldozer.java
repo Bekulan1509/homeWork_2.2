@@ -5,6 +5,15 @@ public class Bulldozer extends Truck implements Printible {
     private float value;
     private String sizeOfTires;
 
+    public Bulldozer(double v, String s) {
+
+    }
+
+    public Bulldozer() {
+
+    }
+
+
     public String getMark() {
         return mark;
     }

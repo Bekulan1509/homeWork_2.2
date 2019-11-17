@@ -1,34 +1,48 @@
 package com.company;
 
+import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
+        createObject("Bulldozer");
+        System.out.println(createObject("DumpTruck"));
+        createObject("FuelTruck");
 
-        CreateObject();
 
     }
 
-
-    public static String CreateObject() {
-        System.out.println("please enter the pults: ");
-        Scanner scanner = new Scanner(System.in);
-        String object = scanner.nextLine();
-        switch (object) {
-            case "bulldozer":
-                Bulldozer bulldozer = new Bulldozer("Volvo", (float) 5.9, "size of tires 325");
-                bulldozer.print();
-                break;
-            case "fuelTruck":
-                FuelTruck fuelTruck = new FuelTruck("it ships fuel\n", "the fuel truck owner is called John\n", "John goes about 20000000 kms for a year in this truck \n ");
-                fuelTruck.print();
-                break;
-            case "dumpTruck":
-                DumpTruck dumpTruck = new DumpTruck(" value of let the transport is 1000 $ for a year\n", "the truck can ship about 10 tons\n", "the dump truck owner is called Michel");
-                dumpTruck.print();
-                break;
+    public static Truck createObject(String objectName) {
+        switch (objectName) {
+            case "Bulldozer":
+                return new Bulldozer(6.6, "R19");
+            case "DumpTruck":
+                DumpTruck dumpTruck = new DumpTruck();
+                dumpTruck.setHowManyTonnesItCanShipping("about 100000 kg");
+                dumpTruck.setTheDumpTruckOwner("John");
+                dumpTruck.setValueOfLetTransport("15000 kg");
+                dumpTruck.setColor("green");
+                dumpTruck.setWeight(50000);
+                dumpTruck.setYear(2009);
+                return new DumpTruck();
+            case "FuelTRuck":
+                FuelTruck fuelTruck = new FuelTruck();
+                fuelTruck.setFuelTruckOwner("Jame");
+                fuelTruck.setHowOftenItGoesForAYear("about 100000 km");
+                fuelTruck.setWhatItShipping("Things");
+                fuelTruck.setColor("white");
+                fuelTruck.setYear(2010);
+                fuelTruck.setWeight(60000);
+                return new FuelTruck();
         }
-        return object;
+        return null;
     }
+
+
 }
+
+
+
+
