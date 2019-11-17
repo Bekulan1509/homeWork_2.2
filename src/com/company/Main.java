@@ -7,9 +7,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-        createObject("Bulldozer");
+        System.out.println(createObject("Bulldozer"));
         System.out.println(createObject("DumpTruck"));
-        createObject("FuelTruck");
+        System.out.println(createObject("FuelTruck"));
 
 
     }
